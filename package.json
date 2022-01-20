@@ -1,0 +1,29 @@
+{
+  "name": "tambourine-developer-test",
+  "version": "1.0.0",
+  "description": "Tambourine Frontend Developer Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloBeltran24/tambourine-developer-test.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "Tambourine"
+  ],
+  "author": "Christian Camilo Beltran Fonseca <cambelf.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CamiloBeltran24/tambourine-developer-test/issues"
+  },
+  "homepage": "https://github.com/CamiloBeltran24/tambourine-developer-test#readme",
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "sass": "^1.49.0"
+  }
+}
