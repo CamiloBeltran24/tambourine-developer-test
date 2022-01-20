@@ -1,0 +1,50 @@
+@import './mixins';
+.back.events {
+  @include back;
+}
+.events {
+  .eventsContainer {
+    @include containers;
+    .events__title {
+      text-align: center;
+      font-family: 'Monserat mid';
+      font-size: 1.7rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 4.2rem;
+    }
+    .events__images {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      figure {
+        width: 100%;
+        position: relative;
+        img {
+          width: 100%;
+        }
+        .date {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          position: absolute;
+          width: 9.5rem;
+          height: 5.5rem;
+          padding: 0 0 0 1rem;
+          background-color: $Gray1;
+          color: $White2;
+          .number {
+            font-size: 5rem;
+            font-family: 'Monserat bold';
+          }
+          .month {
+            font-size: 1.4rem;
+            transform: rotate(-90deg);
+            text-transform: uppercase;
+            font-family: 'Monserat bold';
+          }
+        }
+      }
+    }
+  }
+}

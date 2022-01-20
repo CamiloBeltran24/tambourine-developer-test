@@ -1,13 +1,10 @@
+@import './mixins';
 .back.accomodation {
-  width: 100%;
-  background-color: $White;
+  @include back;
 }
 .accommodation {
   &__container {
-    width: 1080px;
-    max-width: 1080px;
-    margin: auto;
-    padding: 6.6rem 0;
+    @include containers;
     display: flex;
     justify-content: space-between;
     align-items: center;
