@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Monserat';
+  src: url('../assets/fonts/Montserrat_Font/Montserrat-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Playfair display', sans-serif;
+  src: url('../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  font-family: $Font;
+}

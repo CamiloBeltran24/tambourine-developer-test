@@ -4,7 +4,9 @@
   "description": "Tambourine Frontend Developer Test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server",
+    "sass": "sass --watch ./src/scss/styles.scss ./src/css/styles.css"
   },
   "repository": {
     "type": "git",

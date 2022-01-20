@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Monserat";
+  src: url("../assets/fonts/Montserrat_Font/Montserrat-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Playfair display", sans-serif;
+  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  font-family: "Monserat", sans-serif;
+}
+
+.back {
+  width: 100%;
+}
+.back.main {
+  position: relative;
+  height: 100rem;
+  background-color: #000000;
+}
+.back.main .slider {
+  width: 100%;
+  height: 78.6rem;
+  border: 1px solid #fff;
+  display: flex;
+  padding: 0 9rem;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../assets/img/main_slider/Slider1.jpg");
+  object-fit: cover;
+}
+.back.main .slider svg {
+  width: 3rem;
+  height: 5.6rem;
+  cursor: pointer;
+}
+.back.main .slider svg image {
+  cursor: pointer;
+  fill: #fff;
+}
+.back.main .mainContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1080px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 9rem;
+  margin: auto;
+}
+.back.main .mainContainer header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  height: 10rem;
+  padding: 0 6rem;
+}
+.back.main .mainContainer header p {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  cursor: none;
+}
+.back.main .mainContainer header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.back.main .mainContainer__text {
+  width: 100%;
+  height: 38.3rem;
+  padding: 47px 140px;
+  background-color: #000000;
+  color: #f1f2f2;
+}
+.back.main .mainContainer__text h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Playfair display";
+  letter-spacing: 3px;
+  font-weight: 300;
+  line-height: 3.54rem;
+}
+.back.main .mainContainer__text h3 {
+  font-family: "Playfair display";
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.back.main .mainContainer__text p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
