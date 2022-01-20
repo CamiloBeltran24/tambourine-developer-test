@@ -1,6 +1,12 @@
 @font-face {
   font-family: "Monserat";
-  src: url("../assets/fonts/Montserrat_Font/Montserrat-Regular.ttf");
+  src: url("../assets/fonts/Montserrat_Font/Montserrat-Regular.ttf"), url("../assets/fonts/Montserrat_Font/Montserrat-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Monserat bold";
+  src: url("../assets/fonts/Montserrat_Font/Montserrat-Bold.ttf");
   font-style: normal;
   font-weight: normal;
 }
@@ -60,6 +66,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 1080px;
+  max-width: 1080px;
   height: 100%;
   top: 0;
   left: 0;
@@ -119,6 +126,71 @@ html {
   font-size: 1.4rem;
   text-align: center;
   margin-top: 4rem;
+}
+
+.back.accomodation {
+  width: 100%;
+  background-color: #fff;
+}
+
+.accommodation__container {
+  width: 1080px;
+  max-width: 1080px;
+  margin: auto;
+  padding: 6.6rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accommodation__container .text {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+}
+.accommodation__container .text p {
+  font-size: 1.4rem;
+  width: 393px;
+}
+.accommodation__container .text .subtitle {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #282930;
+  font-weight: bold;
+  font-family: "Monserat bold";
+}
+.accommodation__container .text h2 {
+  margin-top: 4rem;
+  margin-bottom: 3.4rem;
+  font-size: 4rem;
+  color: #979fa4;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Monserat bold", "Monserat", sans-serif;
+  letter-spacing: 0;
+}
+.accommodation__container .text a {
+  display: flex;
+  width: 180px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 5rem;
+  color: #e21f25;
+  font-size: 1.7rem;
+  border: 2px solid #e21f25;
+  text-transform: uppercase;
+}
+.accommodation__container .image {
+  width: 55%;
+  height: 360px;
+  display: inline-block;
+}
+.accommodation__container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

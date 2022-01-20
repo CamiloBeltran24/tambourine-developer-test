@@ -1,6 +1,13 @@
 @font-face {
   font-family: 'Monserat';
-  src: url('../assets/fonts/Montserrat_Font/Montserrat-Regular.ttf');
+  src: url('../assets/fonts/Montserrat_Font/Montserrat-Regular.ttf'),
+    url('../assets/fonts/Montserrat_Font/Montserrat-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Monserat bold';
+  src: url('../assets/fonts/Montserrat_Font/Montserrat-Bold.ttf');
   font-style: normal;
   font-weight: normal;
 }
