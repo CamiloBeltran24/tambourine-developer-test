@@ -6,9 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRESS HOTEL</title>
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="icon" href="./src/assets/icons/svgs/Logo.ico" />
   </head>
   <body>
     <div class="container">
+      <div class="parallax"></div>
+      <div class="bookNow-formContainer">
+        <button class="buttonBook">Book now</button>
+        <svg
+          id="arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="13"
+          height="13"
+          viewBox="0 0 13 13"
+        >
+          <image
+            id="Vector_Smart_Object"
+            data-name="Vector Smart Object"
+            width="13"
+            height="13"
+            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAsElEQVQokXWSUQ3CQBBEH6fgHNAvvosDcHIoACfggOIAB1hAAgkGKoFMskuuyzJJk2anL3sz19V7vQFowBHYAzO/kn82/1mAqz0j8ABqQJr51fyx2MeuCDrg0nwovjIBTwGQDsDdM31XJ3l6YNJLscGcbEyBHnLwlgAvHakf9JDXGjXEVksHxNDa4Fq0KigDlGH7p9UqSH9CFjorR2CL97RoKQHlXfp72sWWghRjAvgAp4UtzDXCgL4AAAAASUVORK5CYII="
+          />
+        </svg>
+        <form class="bookNow-form" method="post">
+          <h3>book now</h3>
+
+          <label for="arrival-date">
+            <p>arrival date</p>
+            <div class="input-wrapper">
+              <input type="date" name="" id="arrival-date" required />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+              >
+                <image
+                  id="Vector_Smart_Object"
+                  data-name="Vector Smart Object"
+                  width="16"
+                  height="17"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAABI0lEQVQ4jZWT0U3DQBBEX1D+oQP8xXfowK4AqMChA1wBooKICuISoII4FWA6sEQD7iBopdloYiyFjGQ5t3cZz8zuLX5u7xBugA1QAD3QcIo1UAMj8Kw3S6DUsQfgEWiBF+AbGIxiq71Sv9+jGAoOdqgDKuDAPCoRvObuld6x8Tb5S9QWeiqrX9uHjgTId7B/ae3yO3neyt4+N5Z26AN4AlYK0AkC9wpysCz+ZHAxUkEjC5cglG4yg17SSs1Bp6dQLddoPeQHPcRC7amtVnvLrIXFXIi9WjNardGEJlop6WXhhGA0mU7qGKbdcQvBuNN9SGxUS6y1Xs1ZCKl5L5zUaxnq0VbOQXifyj+HINqFghzR6eSdQ6gbgiBGNK6xp/0ffALtL+uRRWwo8DzAAAAAAElFTkSuQmCC"
+                />
+              </svg>
+            </div>
+          </label>
+          <label for="departure-date">
+            <p>departure date</p>
+            <div class="input-wrapper">
+              <input type="date" name="" id="departure-date" required />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+              >
+                <image
+                  id="Vector_Smart_Object"
+                  data-name="Vector Smart Object"
+                  width="16"
+                  height="17"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAABI0lEQVQ4jZWT0U3DQBBEX1D+oQP8xXfowK4AqMChA1wBooKICuISoII4FWA6sEQD7iBopdloYiyFjGQ5t3cZz8zuLX5u7xBugA1QAD3QcIo1UAMj8Kw3S6DUsQfgEWiBF+AbGIxiq71Sv9+jGAoOdqgDKuDAPCoRvObuld6x8Tb5S9QWeiqrX9uHjgTId7B/ae3yO3neyt4+N5Z26AN4AlYK0AkC9wpysCz+ZHAxUkEjC5cglG4yg17SSs1Bp6dQLddoPeQHPcRC7amtVnvLrIXFXIi9WjNardGEJlop6WXhhGA0mU7qGKbdcQvBuNN9SGxUS6y1Xs1ZCKl5L5zUaxnq0VbOQXifyj+HINqFghzR6eSdQ6gbgiBGNK6xp/0ffALtL+uRRWwo8DzAAAAAAElFTkSuQmCC"
+                />
+              </svg>
+            </div>
+          </label>
+          <label for="" class="select_box">
+            <p>guest</p>
+            <div class="select-wrapper">
+              <select name="adult" id="adult" required>
+                <option value="1" selected>1 Adult</option>
+                <option value="2">2 Adult</option>
+                <option value="3">3 Adult</option>
+                <option value="4">4 Adult</option>
+                <option value="5">5 Adult</option>
+                <option value="6">6 Adult</option>
+                <option value="7">7 Adult</option>
+                <option value="8">8 Adult</option>
+                <option value="9">9 Adult</option>
+                <option value="10">10 Adult</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+              >
+                <image
+                  id="Vector_Smart_Object_copy_9"
+                  data-name="Vector Smart Object copy 9"
+                  width="12"
+                  height="7"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAAcElEQVQYlX3OQQmAQBBG4ScYwAbePFthk5jBJEZYGxjBCkYQDKAR5JdZGJfVuSzDfA+2OtruBEZg5n+irrXhaPQr0r0HgoKESlEDLPYG4FLg0eR2odX2B6cvpRHaDAkPOc4DjQIBRXuOS4GPFLwwwA3TPxjgNhDc4gAAAABJRU5ErkJggg=="
+                />
+              </svg>
+            </div>
+            <div class="select-wrapper">
+              <select name="child" id="child">
+                <option value="0">0 child</option>
+                <option value="1" selected>1 Child</option>
+                <option value="2">2 Child</option>
+                <option value="3">3 Child</option>
+                <option value="4">4 Child</option>
+                <option value="5">5 Child</option>
+                <option value="6">6 Child</option>
+                <option value="7">7 Child</option>
+                <option value="8">8 Child</option>
+                <option value="9">9 Child</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+              >
+                <image
+                  id="Vector_Smart_Object_copy_9"
+                  data-name="Vector Smart Object copy 9"
+                  width="12"
+                  height="7"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAAcElEQVQYlX3OQQmAQBBG4ScYwAbePFthk5jBJEZYGxjBCkYQDKAR5JdZGJfVuSzDfA+2OtruBEZg5n+irrXhaPQr0r0HgoKESlEDLPYG4FLg0eR2odX2B6cvpRHaDAkPOc4DjQIBRXuOS4GPFLwwwA3TPxjgNhDc4gAAAABJRU5ErkJggg=="
+                />
+              </svg>
+            </div>
+          </label>
+          <p class="Message">
+            <span>get ready!</span> You are about to get our best price.
+            Guaranteed.
+          </p>
+          <div class="submitButton-container">
+            <button class="submitButton" type="submit">let´s go</button>
+          </div>
+          <a class="bottomMessage">
+            or, book your group
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="13"
+                viewBox="0 0 24 13"
+              >
+                <image
+                  id="Vector_Smart_Object_copy_6"
+                  data-name="Vector Smart Object copy 6"
+                  width="24"
+                  height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAANCAYAAACzbK7QAAAAj0lEQVQ4jbXTsQkCURCE4U95BVwJ2oF2oKVYgpUYGj4Dc0vQErQCLeFKkAcrKHdme5Ms7ML8sMPMjvUsQSvcx2zmGe644jAlYIkN6lSAHtt41Q8kC/AXkgkYhRQ8sUgGCcijREDZqgE4lWTjDpeY7VV9ZgZd9OGFdeSRFvLHvLV5933IbPLAvCkrgz1ugy3eEd8Yy1/7um8AAAAASUVORK5CYII="
+                />
+              </svg>
+            </span>
+          </a>
+        </form>
+      </div>
       <section class="back main">
         <div class="slider">
           <svg

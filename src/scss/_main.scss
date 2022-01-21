@@ -14,8 +14,10 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
-      background-image: url('../assets/img/main_slider/Slider1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
       object-fit: cover;
+      background-image: url('../assets/img/main_slider/Slider1.jpg');
       svg {
         // fill: $Gray1;
         width: 3rem;
