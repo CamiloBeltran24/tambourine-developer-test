@@ -5,9 +5,15 @@
   padding: 2.8rem 2rem 4rem;
   background-color: $Back-form;
   color: $White2;
-  right: 0;
   top: 8.3rem;
   z-index: 100;
+  transition: all 0.5s ease-in-out;
+  &.hidde {
+    right: -328px;
+  }
+  &.show {
+    right: 0;
+  }
   .buttonBook {
     background-color: $Back-form;
     position: absolute;

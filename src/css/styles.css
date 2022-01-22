@@ -37,8 +37,18 @@ html {
   position: relative;
   width: 100%;
   font-family: "Monserat", sans-serif;
+  overflow: hidden;
 }
 
+@keyframes background {
+  from {
+    opacity: 0;
+    transition: all 8s ease-in-out;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .back {
   width: 100%;
 }
@@ -48,6 +58,7 @@ html {
   background-color: #000000;
 }
 .back.main .slider {
+  position: relative;
   width: 100%;
   height: 78.6rem;
   border: 1px solid #fff;
@@ -59,12 +70,41 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+}
+.back.main .slider__box {
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.back.main .slider__box__image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.back.main .slider__box .s1 {
   background-image: url("../assets/img/main_slider/Slider1.jpg");
 }
+.back.main .slider__box .s2 {
+  background-image: url("../assets/img/main_slider/Slider2.jpg");
+}
+.back.main .slider__box .s3 {
+  background-image: url("../assets/img/main_slider/Slider3.jpg");
+}
+.back.main .slider__box .s4 {
+  background-image: url("../assets/img/main_slider/Slider4.jpg");
+}
 .back.main .slider svg {
+  position: relative;
   width: 3rem;
   height: 5.6rem;
   cursor: pointer;
+  z-index: 100;
 }
 .back.main .slider svg image {
   cursor: pointer;
@@ -145,9 +185,15 @@ html {
   padding: 2.8rem 2rem 4rem;
   background-color: #1e1e1e;
   color: #f1f2f2;
-  right: 0;
   top: 8.3rem;
   z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+.bookNow-formContainer.hidde {
+  right: -328px;
+}
+.bookNow-formContainer.show {
+  right: 0;
 }
 .bookNow-formContainer .buttonBook {
   background-color: #1e1e1e;
@@ -298,6 +344,7 @@ html {
   background-color: #8b8d8a;
   opacity: 0.6;
   z-index: 90;
+  display: none;
 }
 
 .back.accomodation {
@@ -435,6 +482,131 @@ footer .footerContainer {
 footer .footerContainer p {
   font-size: 1.4rem;
   color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .back.main .mainContainer {
+    width: 100%;
+  }
+  .back.main .mainContainer header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .back.main .mainContainer h1 {
+    font-size: 3rem;
+  }
+  .back.main .mainContainer h3 {
+    font-size: 2rem;
+  }
+  .back.main .mainContainer p {
+    font-size: 1.2rem;
+  }
+  .back.main .mainContainer .mainContainer__text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .accommodation__container {
+    width: 90%;
+  }
+  .accommodation__container .text h2 {
+    font-size: 2.5rem;
+  }
+  .accommodation__container .text p {
+    max-width: 100%;
+    font-size: 1.3rem;
+  }
+  .accommodation__container .image {
+    height: auto;
+  }
+
+  .events .eventsContainer {
+    width: 90%;
+  }
+  .events .eventsContainer .events__images {
+    width: 100%;
+    grid-template-columns: repeat(2, 30rem);
+    grid-template-rows: 20rem 20rem;
+    place-content: center;
+  }
+  .events .eventsContainer .events__images .image {
+    height: 100%;
+  }
+  .events .eventsContainer .events__images .image img {
+    height: 100%;
+  }
+
+  footer .footerContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 769px) {
+  .back.main .mainContainer {
+    width: 100%;
+  }
+  .back.main .mainContainer header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .back.main .mainContainer .mainContainer__text {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .back.main .slider svg {
+    display: none;
+  }
+  .back.main .mainContainer header {
+    width: 100%;
+  }
+  .back.main .mainContainer header .logo {
+    width: 15rem;
+    right: 3rem;
+    left: auto;
+  }
+  .back.main .mainContainer .mainContainer__text {
+    padding: 2rem;
+  }
+
+  .accommodation__container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .accommodation__container .text {
+    width: 100%;
+  }
+  .accommodation__container .text h2,
+.accommodation__container .text p {
+    text-align: center;
+  }
+  .accommodation__container .text p {
+    margin: 0 auto;
+  }
+  .accommodation__container .image {
+    width: 100%;
+  }
+  .accommodation__container a {
+    margin: 0 auto 2rem;
+  }
+
+  .events .eventsContainer .events__images {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 25rem);
+  }
+  .events .eventsContainer .events__images .date {
+    width: 15rem;
+    height: 6rem;
+  }
+
+  footer .footerContainer p {
+    text-align: center;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,160 @@
+// TABLET
+@media (max-width: 1024px) {
+  .back {
+    &.main {
+      .mainContainer {
+        width: 100%;
+        header {
+          width: 90%;
+          margin: 0 auto;
+          .logo {
+            // right: 7rem;
+            // left: auto;
+          }
+        }
+        h1 {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        .mainContainer__text {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .accommodation__container {
+    width: 90%;
+    .text {
+      .subtitle {
+        // font-size: 1.4rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        max-width: 100%;
+        font-size: 1.3rem;
+      }
+    }
+    .image {
+      height: auto;
+    }
+  }
+  .events {
+    .eventsContainer {
+      width: 90%;
+      .events__images {
+        width: 100%;
+        grid-template-columns: repeat(2, 30rem);
+        grid-template-rows: 20rem 20rem;
+        place-content: center;
+        .image {
+          height: 100%;
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footerContainer {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// TABLET MD
+@media (max-width: 769px) {
+  .back {
+    &.main {
+      .mainContainer {
+        width: 100%;
+        header {
+          width: 90%;
+          margin: 0 auto;
+          padding: 0 2rem;
+        }
+        .mainContainer__text {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+// MOBILE
+@media (max-width: 600px) {
+  .back {
+    &.main {
+      .slider {
+        svg {
+          display: none;
+        }
+      }
+      .mainContainer {
+        header {
+          // padding: 0 3rem;
+          width: 100%;
+          .logo {
+            width: 15rem;
+            right: 3rem;
+            left: auto;
+          }
+        }
+        .mainContainer__text {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+  .accommodation__container {
+    width: 100%;
+    flex-wrap: wrap;
+    .text {
+      width: 100%;
+      h2,
+      p {
+        text-align: center;
+      }
+      p {
+        margin: 0 auto;
+      }
+    }
+    .image {
+      width: 100%;
+    }
+    a {
+      margin: 0 auto 2rem;
+    }
+  }
+  .events {
+    .eventsContainer {
+      .events__images {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 25rem);
+        .date {
+          width: 15rem;
+          height: 6rem;
+        }
+      }
+    }
+  }
+  footer {
+    .footerContainer {
+      p {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+  }
+}
