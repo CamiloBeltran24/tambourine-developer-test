@@ -5,7 +5,7 @@ document.querySelector('#arrow').addEventListener('click', showMe);
 function showMe() {
   const card = document.querySelector('.bookNow-formContainer');
   const parallax = document.querySelector('.parallax');
-  console.log(parallax);
+  // console.log(parallax);
   if (card.classList.contains('hidde')) {
     card.classList.remove('hidde');
     card.classList.add('show');
@@ -28,15 +28,9 @@ class Slider {
     this.count = 0;
     this.pos = 0;
   }
-  auto(pos = 0) {
-    this.pos = pos;
+  auto() {
     setInterval(() => {
-      if (this.pos < 300) {
-        this.moved();
-      } else {
-        this.pos = 0;
-        this.box.style.left = `-${this.pos}%`;
-      }
+      this.moved();
     }, 8000);
   }
   movedReverse() {
@@ -58,13 +52,11 @@ class Slider {
 }
 
 let mySlider = new Slider();
-
 mySlider.auto();
 
 document.querySelector('.rightArrow').addEventListener('click', () => {
   mySlider.moved();
 });
-
 document.querySelector('.leftArrow').addEventListener('click', () => {
   mySlider.movedReverse();
 });

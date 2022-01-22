@@ -95,8 +95,15 @@
   .back {
     &.main {
       .slider {
+        padding: 0 4rem;
+        &__box {
+          &__image {
+            background-position: center;
+          }
+        }
         svg {
-          display: none;
+          width: 2rem;
+          height: 4.6rem;
         }
       }
       .mainContainer {

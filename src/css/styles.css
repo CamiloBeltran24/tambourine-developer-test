@@ -571,8 +571,15 @@ footer .footerContainer p {
   }
 }
 @media (max-width: 600px) {
+  .back.main .slider {
+    padding: 0 4rem;
+  }
+  .back.main .slider__box__image {
+    background-position: center;
+  }
   .back.main .slider svg {
-    display: none;
+    width: 2rem;
+    height: 4.6rem;
   }
   .back.main .mainContainer header {
     width: 100%;
