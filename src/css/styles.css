@@ -410,6 +410,10 @@ html {
   border: 2px solid #e21f25;
   text-transform: uppercase;
 }
+.accommodation__container .text a:hover {
+  color: #f1f2f2;
+  background-color: #e21f25;
+}
 .accommodation__container .image {
   width: 55%;
   height: 360px;

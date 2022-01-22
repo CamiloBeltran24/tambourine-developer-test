@@ -46,6 +46,10 @@
         font-size: 1.7rem;
         border: 2px solid $Red;
         text-transform: uppercase;
+        &:hover {
+          color: $White2;
+          background-color: $Red;
+        }
       }
     }
     .image {
